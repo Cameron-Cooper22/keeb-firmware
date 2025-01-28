@@ -4,3 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+cortex-m = { version = "0.7.7", features = ["critical-section"] }
+cortex-m-rt = "0.7.5"
+embassy-executor = "0.7.0"
+embassy-nrf = "0.3.1"
+embassy-sync = "0.6.2"
+nrf-softdevice = { version = "0.1.0", features = ["defmt", "ble-peripheral", "critical-section-impl", "ble-gatt-server", "ble-gatt-client", "ble-sec"] }
+nrf-softdevice-s140 = "0.1.2"
+nrf52840 = { version = "0.2.0", features = ["cortex-m-rt"] }
+nrf52840-hal = "0.18.0"
+usbd-hid = "0.8.2"
